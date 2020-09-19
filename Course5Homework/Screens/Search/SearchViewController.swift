@@ -27,6 +27,9 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var repositoryField: UITextField!
     @IBOutlet weak var languageField: UITextField!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var loadIndicator: UIActivityIndicatorView!
+    
+    let reposListViewController = ReposListViewController()
     
     let sharedSession = URLSession.shared
     
@@ -65,7 +68,12 @@ class SearchViewController: UIViewController {
                 return
         }
 
-        let dataTask = sharedSession.dataTask(with: urlRequest) { (data, response, error) in
+        let dataTask = sharedSession.dataTask(with: urlRequest) { [weak self] (data, response, error) in
+            
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                self.loadIndicator.isHidden = true
+            }
             if let error = error {
                 print(error.localizedDescription)
                 return
@@ -84,8 +92,18 @@ class SearchViewController: UIViewController {
                 print("data encoding failed")
                 return
             }
+            
+            if let parsedResult = try? JSONDecoder().decode(ReposResponse.self, from: data) {
+                self.reposListViewController.data = parsedResult
+                DispatchQueue.main.async {
+                    self.navigationController?.pushViewController(self.reposListViewController, animated: true)
+                }
+            }
+            
             print("received data: \(text)")
+            
         }
+        loadIndicator.isHidden = false
         dataTask.resume()
     }
     
