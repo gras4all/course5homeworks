@@ -12,6 +12,7 @@
 		2D66FC76250E4FC4002B2109 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D66FC74250E4FC4002B2109 /* Main.storyboard */; };
 		2D66FC78250E4FD2002B2109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D66FC77250E4FD2002B2109 /* Assets.xcassets */; };
 		2D66FC7B250E4FD2002B2109 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D66FC79250E4FD2002B2109 /* LaunchScreen.storyboard */; };
+		2D7CEB9D2517F68F00B8941C /* WebKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7CEB9C2517F68F00B8941C /* WebKitViewController.swift */; };
 		2D89078F251151BC009204C9 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D89078E251151BC009204C9 /* RepoCell.swift */; };
 		2D89079225115501009204C9 /* UIView+SafeAreaAnchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D89079125115501009204C9 /* UIView+SafeAreaAnchors.swift */; };
 		2D8F200F2515FC3F00BB8DCC /* ReposHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F200E2515FC3F00BB8DCC /* ReposHeaderView.swift */; };
@@ -19,6 +20,9 @@
 		2D8F201725160C0E00BB8DCC /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F201625160C0E00BB8DCC /* Repo.swift */; };
 		2D8F201A25160D0600BB8DCC /* RepoOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F201925160D0600BB8DCC /* RepoOwner.swift */; };
 		2DAB385B250FFD5100CE2DE3 /* ReposListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB385A250FFD5100CE2DE3 /* ReposListViewController.swift */; };
+		2DE40F69251A975A00B80DF9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE40F68251A975A00B80DF9 /* NetworkManager.swift */; };
+		2DE40F6D251AA1FC00B80DF9 /* Base64Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE40F6C251AA1FC00B80DF9 /* Base64Converter.swift */; };
+		2DE40F73251AAB5900B80DF9 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE40F72251AAB5900B80DF9 /* LoginData.swift */; };
 		2DEBDE67250E6C70007C5D96 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBDE66250E6C70007C5D96 /* SearchViewController.swift */; };
 		7F767E65476BE77435A2E7A5 /* Pods_Course5Homework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0C0EF8D7B447CCED957E3D /* Pods_Course5Homework.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +37,7 @@
 		2D66FC77250E4FD2002B2109 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D66FC7A250E4FD2002B2109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D66FC7C250E4FD2002B2109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D7CEB9C2517F68F00B8941C /* WebKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitViewController.swift; sourceTree = "<group>"; };
 		2D89078E251151BC009204C9 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 		2D89079125115501009204C9 /* UIView+SafeAreaAnchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SafeAreaAnchors.swift"; sourceTree = "<group>"; };
 		2D8F200E2515FC3F00BB8DCC /* ReposHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposHeaderView.swift; sourceTree = "<group>"; };
@@ -40,6 +45,9 @@
 		2D8F201625160C0E00BB8DCC /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		2D8F201925160D0600BB8DCC /* RepoOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoOwner.swift; sourceTree = "<group>"; };
 		2DAB385A250FFD5100CE2DE3 /* ReposListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewController.swift; sourceTree = "<group>"; };
+		2DE40F68251A975A00B80DF9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2DE40F6C251AA1FC00B80DF9 /* Base64Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64Converter.swift; sourceTree = "<group>"; };
+		2DE40F72251AAB5900B80DF9 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		2DEBDE61250E5E87007C5D96 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		2DEBDE66250E6C70007C5D96 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		5C158290A73FC48E721449EB /* Pods-Course5Homework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Course5Homework.debug.xcconfig"; path = "Target Support Files/Pods-Course5Homework/Pods-Course5Homework.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +87,8 @@
 		2D66FC6D250E4FC4002B2109 /* Course5Homework */ = {
 			isa = PBXGroup;
 			children = (
+				2DE40F6B251AA18D00B80DF9 /* Utils */,
+				2DE40F67251A972200B80DF9 /* Network */,
 				2D89079325115529009204C9 /* Screens */,
 				2D890790251154D1009204C9 /* Extensions */,
 				2D66FC6E250E4FC4002B2109 /* AppDelegate.swift */,
@@ -98,6 +108,14 @@
 			path = ReposList;
 			sourceTree = "<group>";
 		};
+		2D7CEB9B2517F65D00B8941C /* WebKit */ = {
+			isa = PBXGroup;
+			children = (
+				2D7CEB9C2517F68F00B8941C /* WebKitViewController.swift */,
+			);
+			path = WebKit;
+			sourceTree = "<group>";
+		};
 		2D890790251154D1009204C9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +127,7 @@
 		2D89079325115529009204C9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2D7CEB9B2517F65D00B8941C /* WebKit */,
 				2D89079525115568009204C9 /* Search */,
 				2D89079425115553009204C9 /* Login */,
 				2D7BFC5D2510B6B4009A8313 /* ReposList */,
@@ -120,7 +139,8 @@
 		2D89079425115553009204C9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				2D66FC72250E4FC4002B2109 /* LoginViewController.swift */,
+				2DE40F71251AAB4200B80DF9 /* Views */,
+				2DE40F70251AAB3900B80DF9 /* Models */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -159,6 +179,38 @@
 				2DAB385A250FFD5100CE2DE3 /* ReposListViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2DE40F67251A972200B80DF9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2DE40F68251A975A00B80DF9 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2DE40F6B251AA18D00B80DF9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2DE40F6C251AA1FC00B80DF9 /* Base64Converter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2DE40F70251AAB3900B80DF9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2DE40F72251AAB5900B80DF9 /* LoginData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2DE40F71251AAB4200B80DF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D66FC72250E4FC4002B2109 /* LoginViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		2DEBDE60250E5E87007C5D96 /* Frameworks */ = {
@@ -295,12 +347,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DE40F69251A975A00B80DF9 /* NetworkManager.swift in Sources */,
 				2D89078F251151BC009204C9 /* RepoCell.swift in Sources */,
 				2D8F201A25160D0600BB8DCC /* RepoOwner.swift in Sources */,
+				2DE40F6D251AA1FC00B80DF9 /* Base64Converter.swift in Sources */,
 				2D89079225115501009204C9 /* UIView+SafeAreaAnchors.swift in Sources */,
 				2DAB385B250FFD5100CE2DE3 /* ReposListViewController.swift in Sources */,
 				2D8F201725160C0E00BB8DCC /* Repo.swift in Sources */,
+				2D7CEB9D2517F68F00B8941C /* WebKitViewController.swift in Sources */,
 				2DEBDE67250E6C70007C5D96 /* SearchViewController.swift in Sources */,
+				2DE40F73251AAB5900B80DF9 /* LoginData.swift in Sources */,
 				2D8F200F2515FC3F00BB8DCC /* ReposHeaderView.swift in Sources */,
 				2D66FC73250E4FC4002B2109 /* LoginViewController.swift in Sources */,
 				2D8F20142516099500BB8DCC /* ReposResponse.swift in Sources */,

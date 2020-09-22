@@ -63,6 +63,15 @@ extension ReposListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let urlString = data.items[indexPath.row].htmlUrl
+        let titleString = data.items[indexPath.row].name
+        let wkViewController = WebKitViewController()
+        wkViewController.url = URL(string: urlString)
+        wkViewController.repoName = titleString
+        self.navigationController?.pushViewController(wkViewController, animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableCellHeight
     }

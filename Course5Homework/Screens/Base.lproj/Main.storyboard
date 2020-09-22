@@ -61,9 +61,11 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginBtnTap:" destination="B7s-Pw-oYG" eventType="touchUpInside" id="uSp-Eu-x1J"/>
-                                    <segue destination="qAG-or-cj0" kind="push" id="FeX-aa-xl2"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Wsi-ho-cPd">
+                                <rect key="frame" x="251" y="478" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vAD-GG-Kdj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -71,17 +73,20 @@
                             <constraint firstItem="aEc-Dv-j0Q" firstAttribute="leading" secondItem="vAD-GG-Kdj" secondAttribute="leading" constant="20" id="5Xz-Ps-5n5"/>
                             <constraint firstItem="vAD-GG-Kdj" firstAttribute="trailing" secondItem="aEc-Dv-j0Q" secondAttribute="trailing" constant="20" id="BBe-nB-hWe"/>
                             <constraint firstItem="6Pr-UL-NhU" firstAttribute="centerX" secondItem="wBk-82-duo" secondAttribute="centerX" id="DX8-VH-VdT"/>
+                            <constraint firstItem="Wsi-ho-cPd" firstAttribute="leading" secondItem="fUX-6p-HMP" secondAttribute="trailing" constant="25" id="K1F-iv-W96"/>
                             <constraint firstItem="fUX-6p-HMP" firstAttribute="top" secondItem="UQ0-1b-0WI" secondAttribute="bottom" constant="45" id="Mxm-bA-2LR"/>
                             <constraint firstItem="aEc-Dv-j0Q" firstAttribute="top" secondItem="6Pr-UL-NhU" secondAttribute="bottom" constant="45" id="X0k-U3-3zf"/>
                             <constraint firstItem="6Pr-UL-NhU" firstAttribute="top" secondItem="vAD-GG-Kdj" secondAttribute="top" constant="50" id="XtK-fY-mNk"/>
                             <constraint firstItem="fUX-6p-HMP" firstAttribute="centerX" secondItem="wBk-82-duo" secondAttribute="centerX" id="glY-ev-rSd"/>
                             <constraint firstItem="UQ0-1b-0WI" firstAttribute="top" secondItem="aEc-Dv-j0Q" secondAttribute="bottom" constant="45" id="m0c-rH-FUc"/>
+                            <constraint firstItem="Wsi-ho-cPd" firstAttribute="centerY" secondItem="fUX-6p-HMP" secondAttribute="centerY" id="m4Z-gH-URS"/>
                             <constraint firstItem="vAD-GG-Kdj" firstAttribute="trailing" secondItem="UQ0-1b-0WI" secondAttribute="trailing" constant="20" id="tzC-Qn-nPF"/>
                             <constraint firstItem="UQ0-1b-0WI" firstAttribute="leading" secondItem="vAD-GG-Kdj" secondAttribute="leading" constant="20" id="zQx-9K-UkN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TiG-66-s1M"/>
                     <connections>
+                        <outlet property="loadIndicator" destination="Wsi-ho-cPd" id="ru7-pi-lYt"/>
                         <outlet property="loginField" destination="aEc-Dv-j0Q" id="rSp-Mt-paO"/>
                         <outlet property="logoImageView" destination="6Pr-UL-NhU" id="1FN-tI-MPz"/>
                         <outlet property="passwordField" destination="UQ0-1b-0WI" id="bni-p4-bFz"/>
@@ -100,7 +105,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIS-Kr-FBw">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcB-bV-z9u">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
